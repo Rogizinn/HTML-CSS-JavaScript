@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="../Formulario/formulario.css">
+        <script src="MyJS.js"></script>
+    </head>
+    <body>
+        <h1>Meu Pirmeiro Formulário.</h1>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Digite seu nome:</label>
+                <input class="alinha" type="text" name="nomeAluno" placeholder="Nome Completo" required> <br>
+                <label>Endereços:</label>
+                <input class="alinha" type="text" name="enderecoAluno" placeholder="Endereço"> <br>
+                <label>Digite seu email:</label>
+                <input class="alinha" type="email" name="emailAluno" placeholder="Email"> <br>
+                <label>Digite sua senha:</label>
+                <input class="pass" type="password" name="senha" placeholder="Senha até 6 caracteres" maxlength="6"><br><br>
+                <label>Sexo:</label><br>
+                <input type="radio" name="sexo" value="Feminino"> Feminino<br>
+                <input type="radio" name="sexo" value="Masculino"> Masculino<br>
+                <input type="radio" name="sexo" value="NãoInforma"> Não Informa<br><br>
+                <label>Escolha seus navegadores preferidos:</label><br>
+                <input type="checkbox" name="nva1" value="Chrome">Google Chrome<br>
+                <input type="checkbox" name="nva2" value="Explorer">Internet Explorer<br>
+                <input type="checkbox" name="nva3" value="Opera">Opera<br>
+                <input type="checkbox" name="nva4" value="Firefox">Mozila Firefox<br><br>
+                <label>Anexe um arquivo:</label><br>
+                <input type="file" name="File1"><br><br>
+                <label>Escolha um carro:</label>
+                <select>
+                    <option value=""></option>
+                    <option value="volvo">Volvo</option>
+                    <option value="mercedes">Mercedes Bens</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="fiat">Fiat 147</option>
+                    <option value="fusca">Fusquinha</option>
+                </select><br><br>
+                <label>Sugestões:</label><br>
+                <textarea type="textarea" name="texto" placeholder="Digite sua Opinião" rows="4" cols="80"></textarea>
+            </fieldset>
+            <button>Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>

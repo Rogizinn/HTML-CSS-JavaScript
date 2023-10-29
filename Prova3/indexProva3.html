@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+    <!-- Nome: Igor Fagundes Martins
+         RA: 1A2268101538 -->
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./formularioProva3.css" media="screen">
+        <script type="text/javascript" src="./formularioProva3.js"></script>
+        <title>Ficha Cadastral</title>
+    </head>
+
+    <body>
+
+        <div>
+            <h1 class="titulo">Cadastro de Clientes</h1>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Nome:</strong></label>
+                    <input type="text" class="campoNome" name="nome">
+                </div>
+            </fieldset> 
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Email:</strong></label>
+                    <input type="text" name="email">
+                </div>
+                <div class="campo">
+                    <label><strong>Senha:</strong></label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="campo">
+                <div>    
+                    <label><strong>Endereço:</strong></label>
+                    <input type="text" class="campoEndereco" name="endereço">
+                </div>
+                <div class="campo">
+                    <label><strong>Data de Nascimento:</strong></label>
+                    <input type="date" name="data">
+                </div>
+                <div>
+                    <label><strong>Cep:</strong></label>
+                    <input type="number" name="cep">
+                </div>
+                <div class="campo>"
+                    <label><strong>CPF:</strong></label>
+                    <input id="cpf" type="text" name="cpf" maxlength="11" required>
+                </div>    
+            </fieldset>
+
+            <fieldset class="campo">
+                <div class="campo>"
+                    <label><strong>Telefone:</strong></label>
+                    <input type="number" class="telefone" name="telefone">
+                </div>
+            </fieldset>
+        
+            <div class="campo">
+                <label><strong>Sexo:</strong></label>
+                <select>
+                  <option selected disabled value=""></option>
+                  <option>Feminino</option>
+                  <option>Masculino</option>
+                  <option>Não informado</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Escolaridade:</strong></label>
+                    <select id="escolaridade">
+                    <option selected disabled value=""></option>
+                    <option>Fundamental</option>
+                    <option>Médio</option>
+                    <option>Superior</option>
+                    <option>Especialista</option>
+                    <option>Mestrado</option>
+                    <option>Doutorado</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="grupo">
+                <label><strong>Ocupação:</strong></label>
+                <label>
+                    <input type="checkbox" name="ocupacao" value="ocupacao">Profissional Liberal
+                </label>
+                <label>
+                    <input type="checkbox" name="ocupacao" value="ocupacao">Microempresário
+                </label>
+                <label>
+                    <input type="checkbox" name="ocupacao" value="ocupacao">CLT
+                </label>
+                <label>
+                    <input type="checkbox" name="ocupacao" value="ocupacao">Outros
+                </label>
+            </div>
+            <br>
+            <div>
+                <label><Strong>Tipos de Entretenimento:</Strong></label><br>
+                <input type="textarea" class="campoEntretenimento" name="entretenimento" placeholder="Digite aqui seus entretenimentos favoritos">
+            </div>
+
+            <button class="botao2" type="reset">Limpar dados</button>
+            <button class="botao" type="submit" onclick="validacpf(), validaSenha()">Concluído</button>           
+
+        </form>
+
+    </body>
+           
+</html>

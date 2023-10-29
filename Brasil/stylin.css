@@ -1,0 +1,70 @@
+table {
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 0%;
+    border-spacing: 5px;
+    background-color: rgb(226, 223, 223);
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 3rem;
+}
+
+.texto1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+    font-weight: bold;
+}
+
+.texto2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DE9800;
+    font-weight: bold;
+}
+
+.texto3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #44403F;
+    font-weight: bold;
+}
+
+.texto4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C91B04;
+    font-weight: bold;
+}
+
+.titulo {
+    color: green;
+}
+
+.tituloColuna {
+    color: #999999;
+    font-size: 13px;
+}
+
+tr:hover {
+    background-color: rgb(169, 173, 173);
+}
+
+.rodape {
+    color: green;
+    font-size: 17px;
+}
+
+.rodapezin {
+    color: #a5750e;
+    font-size: 17px;
+}
+
+.rodapezao {
+    color: #C91B04;
+    font-size: 17px;
+}
+
+.final {
+    color: rgb(94, 92, 92);
+    font-size: 17px;
+}
